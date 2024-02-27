@@ -495,7 +495,7 @@ label{
 						</div>
 						
 						<div class="clasificacion_info">
-							<button class="boton boton1" onclick="(window.location ='configuracion.jsp')">
+							<button class="boton boton1" onclick="(window.location ='EliminarCategoriaController?ruta=eliminarCategoria&id=${categoria.id}')">
 								<iconify-icon icon="majesticons:delete-bin" width="18"></iconify-icon>
 								<p>Eliminar	</p>
 							</button>

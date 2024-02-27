@@ -92,6 +92,18 @@ public class Categoria implements Serializable{
     	return (Categoria) categoria;
 	}
 
+	public static void delete(Integer id) {
+		EntityManager em = Persistence.createEntityManagerFactory("ImplementaciónChaucherita").createEntityManager();
+	    Categoria categoria = em.find(Categoria.class, id);
+	    if (categoria != null) {
+	        em.getTransaction().begin();
+	        em.remove(categoria);
+	        em.getTransaction().commit();
+	    } else {
+	        System.out.println("xd");
+	    }
+	}
+	
 	public static void actualizar(Categoria categoria, String nombre) {
 		EntityManager em = Persistence.createEntityManagerFactory("ImplementaciónChaucherita").createEntityManager();
 		
