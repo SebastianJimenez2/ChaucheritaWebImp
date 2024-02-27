@@ -100,7 +100,7 @@ public class Categoria implements Serializable{
 	        em.remove(categoria);
 	        em.getTransaction().commit();
 	    } else {
-	        System.out.println("xd");
+	        System.out.println("Fallo al borrar");
 	    }
 	}
 	

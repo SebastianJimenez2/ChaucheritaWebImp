@@ -550,7 +550,7 @@ main {
 
 		<form action="VerCategoriasController" method="POST">
 			<button class="contenedor-agregar-categoria boton boton2">
-				<p>Categorias</p>
+				<p>Categorías</p>
 			</button>
 		</form>
 	</main>

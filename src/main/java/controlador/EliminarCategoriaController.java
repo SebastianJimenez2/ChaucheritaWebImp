@@ -23,14 +23,8 @@ public class EliminarCategoriaController extends HttpServlet {
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    	//1. Obtengo los parametros
-        String idString = request.getParameter("id");
-        //2. Hablo con el modelo
-        if (idString != null && !idString.isEmpty()) {
-            Integer id = Integer.parseInt(idString);
-            eliminarCategoria(id);
-        }
-        //3. Hablo con la vista
+    	Integer id = Integer.parseInt(request.getParameter("id"));
+        eliminarCategoria(id);
         response.sendRedirect("VerCategoriasController");
     }
 

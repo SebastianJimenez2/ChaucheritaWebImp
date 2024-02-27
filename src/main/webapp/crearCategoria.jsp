@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 <meta charset="UTF-8">
@@ -533,7 +533,7 @@ main {
 
 <body>
 	<header class="header-principal">
-		<button class="btn-regresar" onclick="(window.location ='index.html')">
+		<button class="btn-regresar" onclick="(window.location ='VerCategoriasController')">
 			<iconify-icon class="icono-boton" icon="mdi:arrow-left" width="20"></iconify-icon>
 		</button>
 		<button class="boton boton2 usuario_shortcut">
@@ -543,12 +543,12 @@ main {
 	</header>
 	<main>
 		<div class="contenedor-agregar-categoria">
-			<p class="titulo">Agregar Categoria</p>
+			<p class="titulo">Agregar Categoría</p>
 			<form action="AgregarCategoriaController?ruta=guardarCategoria" method="post" class="form-agregar-categoria">
-				<label for="nombre">Nombre de Categoria</label> 
+				<label for="nombre">Nombre de Categoría</label> 
 				<input type="text" name="nombre" class="txt-nombre-categoria" placeholder="Nombre de Categoria">
 				
-				<label for="nombre">Tipo de Categoria</label> 
+				<label for="nombre">Tipo de Categoría</label> 
 				<select id="opciones" name="tipo" class="txt-nombre-categoria">
 					<option value="0">-</option>
 					<option value="1">Ingreso</option>

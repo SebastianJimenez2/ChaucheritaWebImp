@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
+<title>Editar Categoria</title>
 <script
 	src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </head>
@@ -533,7 +533,7 @@ main {
 
 <body>
 	<header class="header-principal">
-		<button class="btn-regresar" onclick="(window.location ='index.html')">
+		<button class="btn-regresar" onclick="(window.location ='VerCategoriasController')">
 			<iconify-icon class="icono-boton" icon="mdi:arrow-left" width="20"></iconify-icon>
 		</button>
 		<button class="boton boton2 usuario_shortcut">
@@ -543,11 +543,12 @@ main {
 	</header>
 	<main>
 		<div class="contenedor-agregar-categoria">
-			<p class="titulo">Editar Categoria</p>
+			<p class="titulo">Editar Categoría</p>
 			<form action="ActualizarCategoriaController?ruta=guardarCategoria" method="post" class="form-agregar-categoria">
-				<input type="text" name="id" value="${categoria.id}" class="txt-nombre-categoria" style="background-color: #FFF">
+				<label for="nombre">ID: ${categoria.id}</label> 
+				<input type="hidden" name="id" value="${categoria.id}">
 				
-				<label for="nombre">Nombre de Categoria</label> 
+				<label for="nombre">Nombre de Categoría</label> 
 				<input type="text" name="nombre" class="txt-nombre-categoria" placeholder="Nombre de Categoria">
 
 				<input type="submit" class="btn-agregar-categoria" value="Agregar Categoría">

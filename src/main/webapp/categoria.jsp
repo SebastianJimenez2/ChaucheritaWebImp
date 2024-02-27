@@ -7,7 +7,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>categorias</title>
+	<title>Categorías</title>
 	<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </head>
 
@@ -479,7 +479,7 @@ label{
 	
 	<div class="contenedor_default">
 		<header class="header_contenedor">
-			<h2>Categorias</h2>
+			<h2>Categorías</h2>
 			<button class="boton boton1" onclick="(window.location ='AgregarCategoriaController?ruta=crearCategoria')">
 				<iconify-icon icon="mingcute:add-fill" width="18"></iconify-icon>
 				<p>Agregar categoría</p>
@@ -490,7 +490,7 @@ label{
 			<c:forEach items="${categorias}" var="categoria">
 					<div class="clasificacion_item">
 						<div class="clasificacion_icono">
-							<iconify-icon class="icono" icon="mdi:food" width="32"></iconify-icon>
+							<iconify-icon class="icono" icon="fxemoji:orangebook" width="45"></iconify-icon>
 							<h4>${categoria.nombre}</h4>
 						</div>
 						
