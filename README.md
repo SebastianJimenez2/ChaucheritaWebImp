@@ -1,4 +1,4 @@
-MySQL Database on XAMPP is necessaty to use the app
+MySQL Database on XAMPP is necessary to use the app
 * Database-name:chaucheritadb
 * The DB must have at least one table for 'categorias':
 ```
