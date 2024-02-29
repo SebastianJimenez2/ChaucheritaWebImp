@@ -51,7 +51,7 @@ public class AgregarCategoriaController extends HttpServlet {
 		} else if (tipo == 2) {
 			Categoria.save(nombre, TipoMovimiento.EGRESO);
 		} else {
-			System.out.println("xd");
+			System.out.println("ERROR: No se selecciono ningun tipo.");
 		}
 	}
 }
