@@ -75,9 +75,9 @@ public class Categoria implements Serializable{
     	
 		String consultaJPQL = "SELECT c.* FROM categoria c";
 		Query query = em.createNativeQuery(consultaJPQL, Categoria.class);
-		List<Categoria> categoria = (List<Categoria>) query.getResultList();
+		List<Categoria> categorias = (List<Categoria>) query.getResultList();
 		
-    	return (List<Categoria>) categoria;
+    	return (List<Categoria>) categorias;
 	}
 
 	public static Categoria getById(Integer id) {
